@@ -1,7 +1,7 @@
  import _ from 'lodash';
  import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-//redux-thunk
+//action creator to make only unique calls without memoize
 export const fetchPostsAndUsers = () => async (dispatch, getState) =>{
 	
 	await dispatch(fetchPosts());
